@@ -1,19 +1,23 @@
 {
-  "manifest_version": 2,
-
-  "name": "AWS Role Editor",
-  "description": "This extension allows you to modify your AWS Roles.",
-  "version": "0.3",
+  "manifest_version": 3,
+  "name": "Cloud Cookie Lover",
+  "description": "This extension allows you to modify your to nom nom.",
+  "version": "1.3",
   "icons": {
     "128": "icons/128x128-icon.png",
     "16": "icons/16x16-icon.png"
   },
-  "browser_action": {
-    "default_icon": "icons/16x16-icon.png",
+  "action": {
+    "default_icon": {
+      "128": "icons/128x128-icon.png",
+      "16": "icons/16x16-icon.png"
+    },
     "default_popup": "popup.html"
   },
   "permissions": [
-    "cookies",
+    "cookies"
+  ],
+  "host_permissions": [
     "https://console.aws.amazon.com/"
-   ]
+  ]
 }
